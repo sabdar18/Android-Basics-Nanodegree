@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vamsi Type Institute</string>
+    <string name="type_writer_image">Type Writer Banner</string>
+    <string name="address">Vamsi Type Institute, Perala, Chirala, Andhra Pradesh</string>
+    <string name="phoneNumber">9395591020</string>
+    <string name="emailAddress">vamsee5665@gmail.com</string>
+    <string name="hours_of_operation">Hours of Operation</string>
+    <string name="hoursValue">07:00 A.M. - 11:00 A.M. \n04:00 P.M. - 08:00 P.M.</string>
+    <string name="description_label">Description :</string>
+    <string name="description">Vamsi Type Institute offers Type Writing Courses in English and Telugu. Institute is recognized by the State Board of Technical Education, Andhra Pradesh. Institue is running successfully from more than 30 years. \n\nCourses Offered are : \n TypeWriting English Lower (30 WPM) \n TypeWriting Telugu Lower (25 WPM) \n TypeWriting English Higher (45 WPM) \n TypeWriting Telugu Higher (40 WPM) </string>
+</resources>
