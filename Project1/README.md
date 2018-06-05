@@ -1,12 +1,7 @@
 # Project 1 (Single Screen Application)
-
-## Screenshots
-<img src="./Screenshots/1.png" width="300" /> &nbsp; <img src="./Screenshots/2.png" width="300" />
-
 ## Project Overview
  > Design and implement a single screen app that displays information about a fictional small business. Think along the lines of your favorite coffeeshop, local restaurant, or that gem of a store that sells those rare comic books or records.
- 
-## Requirements
+ ## Requirements
 Your design must include: 
 * Business name
 * At least one photo representing the business
@@ -15,4 +10,5 @@ Your design must include:
     * Address of the Business
     * Description of business
     * Hours of operation
-
+## Screenshots
+<img src="./Screenshots/1.png" width="400" /> &nbsp; <img src="./Screenshots/2.png" width="400" />
