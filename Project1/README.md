@@ -1,9 +1,7 @@
 # Project 1 (Single Screen Application)
 
 ## Screenshots
-<img src="./Screenshots/1.png" width="300" /> 
-    
-<img src="./Screenshots/2.png" width="300" />
+<img src="./Screenshots/1.png" width="300" /> &nbsp; <img src="./Screenshots/2.png" width="300" />
 
 ## Project Overview
  > Design and implement a single screen app that displays information about a fictional small business. Think along the lines of your favorite coffeeshop, local restaurant, or that gem of a store that sells those rare comic books or records.
