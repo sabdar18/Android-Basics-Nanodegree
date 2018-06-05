@@ -9,7 +9,7 @@
     </style>
 
     <style name="MyHeadLineStyle" parent="AppTheme" >
-        <item name="android:textColor" > @color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
     </style>
 
