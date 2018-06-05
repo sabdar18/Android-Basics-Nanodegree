@@ -1,16 +1,15 @@
 # Project 1 (Single Screen Application)
 
 ## Screenshots
-<img src="./Screenshots/1.png" width="250" /> &nbsp;
-<img src="./Screenshots/2.png" width="250" />
+<img src="./Screenshots/1.png" width="300" /> 
+    
+<img src="./Screenshots/2.png" width="300" />
 
-## PROJECT SPECIFICATION
-
-### Content Review
-
-| CRITERIA | MEETS SPECIFICATIONS |
-|----------|----------------------|
-| Design includes all specified business criteria | Your design must include: 
+## Project Overview
+ > Design and implement a single screen app that displays information about a fictional small business. Think along the lines of your favorite coffeeshop, local restaurant, or that gem of a store that sells those rare comic books or records.
+ 
+## Requirements
+Your design must include: 
 * Business name
 * At least one photo representing the business
 * Two or more other pieces of information, such as:
@@ -18,4 +17,4 @@
     * Address of the Business
     * Description of business
     * Hours of operation
-|
+
