@@ -3,3 +3,4 @@
 
 ## Projects
 1. [Project 1 (Single Screen Application)](./Project1)
+2. [Project 2 (Score Keeper Application)](./Project2)
