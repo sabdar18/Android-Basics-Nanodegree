@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">Project 2</string>
+    <string name="app_name">Score Keeper</string>
+    <string name="threePoints">+3 Points</string>
+    <string name="twoPoints">+2 Points</string>
+    <string name="onePoint">+1 Point</string>
+    <string name="teamA">Team A</string>
+    <string name="zero">0</string>
+    <string name="reset">Reset</string>
+    <string name="teamB">Team B</string>
+    <string name="teamA_Image">Team A Image</string>
+    <string name="teamB_Image">Team B Image</string>
+    <string name="resetButtonDescription">Reset Button</string>
+    <plurals name="scoreDescription">
+        <item quantity="one"> %s Score %d Point</item>
+        <item quantity="other"> %s Score %d Points</item>
+    </plurals>
+    <plurals name="buttonDescription">
+        <item quantity="one"> %s  %d Point Button</item>
+        <item quantity="other"> %s  %d Points Button</item>
+    </plurals>
+
 </resources>
