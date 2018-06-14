@@ -21,6 +21,10 @@ Your design must include:
  * Each track a different metric (one score, the other fouls, for instance).
 
 ##### Reset button:
- * The layout contains a ‘reset’ button. 
- <!-- ## Screenshots
- <img src="./Screenshots/1.png" width="400" /> &nbsp; <img src="./Screenshots/2.png" width="400" /> -->
+ * The layout contains a ‘reset’ button.
+  
+## Screenshots
+ <img src="./Screenshots/1.png" width="400" /> &nbsp; <img src="./Screenshots/2.png" width="400" />
+ <br>
+  <img src="./Screenshots/3.png" width="500" />
+   <img src="./Screenshots/4.png" width="500" /> 
