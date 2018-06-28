@@ -16,22 +16,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String TEAM_B_SCORE = "TEAM_B_SCORE";
 
     //constant Scores
-    private static int ZERO_POINT = 0;
-    private static int ONE_POINT = 1;
-    private static int TWO_POINTS = 2;
-    private static int THREE_POINTS = 3;
+    private static final int ZERO_POINT  = 0;
+    private static final int ONE_POINT = 1;
+    private static final int TWO_POINTS = 2;
+    private static final int THREE_POINTS = 3;
 
     //Declaring variables for Scores & initialize
-    private int teamAScore = ZERO_POINT;
-    private int teamBScore = ZERO_POINT;
+    private int teamAScore;
+    private int teamBScore;
 
     //Declaring TextViews
     private TextView teamAScoreTV;
     private TextView teamBScoreTV;
 
     //Declaring Buttons
-    private Button teamAOnePointButton, teamATwoPointButton, teamAThreePointButton;
-    private Button teamBOnePointButton, teamBTwoPointButton, teamBThreePointButton;
+    private Button teamAOnePointButton;
+    private Button teamATwoPointButton;
+    private Button teamAThreePointButton;
+    private Button teamBOnePointButton;
+    private Button teamBTwoPointButton;
+    private Button teamBThreePointButton;
     private Button resetButton;
 
     @Override
