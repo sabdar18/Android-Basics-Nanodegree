@@ -62,7 +62,6 @@ obj/
 *.iws
 /out/
 
-.idea/
 # User-specific configurations
 .idea/caches/
 .idea/libraries/
