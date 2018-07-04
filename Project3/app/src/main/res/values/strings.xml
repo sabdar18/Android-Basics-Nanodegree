@@ -1,3 +1,59 @@
 <resources>
-    <string name="app_name">Project 3</string>
+    <string name="app_name">Quiz Application</string>
+    <string name="q1">Question 1</string>
+    <string name="q2">Question 2</string>
+    <string name="q3">Question 3</string>
+    <string name="q4">Question 4</string>
+    <string name="q5">Question 5</string>
+    <string name="q6">Question 6</string>
+    <string name="submit">Submit</string>
+    <string name="CB4">Check Box 4</string>
+    <string name="CB3">Check Box 3</string>
+    <string name="CB2">Check Box 2</string>
+    <string name="CB1">Check Box 1</string>
+    <string name="RB1">Radio Button 1</string>
+    <string name="RB2">Radio Button 2</string>
+    <string name="RB3">Radio Button 3</string>
+    <string name="RB4">Radio Button 4</string>
+
+    <string name="answerOne">26</string>
+    <string name="answerFour">25</string>
+    <string name="result">Your Score %d/%d</string>
+
+    <string-array name="questions">
+        <item>Android Oreo 8.0 API Level</item>
+        <item> Android is based on which kernel?</item>
+        <item>Following which Languages is/are used for android apps ?</item>
+        <item>What is API of Android Nougat 7.1 ? </item>
+        <item>As on May 7, 2018, how many devices using android Oreo 8.0 ?</item>
+        <item>For creating user interface in Android, Which of the Following is/are Used ?</item>
+    </string-array>
+
+    <string-array name="qThreeOptions">
+        <item>Java</item>
+        <item>Php</item>
+        <item>Node Js</item>
+        <item>Kotlin</item>
+    </string-array>
+
+    <string-array name="qTwoOptions">
+        <item>Linux kernel</item>
+        <item>Windows kernel</item>
+        <item>MAC kernel</item>
+        <item>Hybrid kernel</item>
+    </string-array>
+
+    <string-array name="qFiveOptions">
+        <item>5.0%</item>
+        <item>5.1%</item>
+        <item>4.8%</item>
+        <item>4.9%</item>
+    </string-array>
+
+    <string-array name="qSixOptions">
+        <item>Java</item>
+        <item>Xml</item>
+        <item>Html</item>
+        <item>Kotlin</item>
+    </string-array>
 </resources>

@@ -8,6 +8,7 @@
 * We want you to be creative about how you accomplish this. 
 * It’s up to you what the quiz questions will be about and how you want to present them to your user.
 * Per the rubric, we require a minimum of 4 questions and a maximum of 10 quiz questions for a proper app submission
+* **App contains 4 - 10 questions, including at least one check box, one radio button, and one text entry.**
  
  ## Build Your Project
  >To complete this project, you'll need to design a quiz layout and implement it in an app. The quiz can be about any topic of your choice, and you are encouraged to create one on a topic you find personally interesting.
@@ -20,6 +21,8 @@
 ## Screenshots
  <img src="./Screenshots/1.png" width="400" /> &nbsp; <img src="./Screenshots/2.png" width="400" />
  <br>
- <img src="./Screenshots/3.png" width="600" />
+ <img src="./Screenshots/3.png" width="400" />
  <br>
- <img src="./Screenshots/4.png" width="600" /> 
+ <img src="./Screenshots/4.png" width="600" />
+ <br>
+ <img src="./Screenshots/5.png" width="600" /> 

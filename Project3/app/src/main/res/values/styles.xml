@@ -10,4 +10,16 @@
 
     </style>
 
+    <style name="MyTextStyle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="MyButtonStyle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/secondaryColor</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
 </resources>

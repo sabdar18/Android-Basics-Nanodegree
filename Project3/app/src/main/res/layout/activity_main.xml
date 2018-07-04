@@ -1,23 +1,346 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionSV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/questionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:cardBackgroundColor="@color/secondaryColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/quizTitleTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8dp"
+                    android:layout_marginEnd="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/dimen_16dp"
+                    android:layout_marginRight="@dimen/dimen_16dp"
+                    android:layout_marginStart="@dimen/dimen_16dp"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/questionOneTV"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardTitle"
+            app:layout_constraintStart_toStartOf="@+id/cardTitle"
+            app:layout_constraintTop_toBottomOf="@+id/cardTitle"
+            tools:text="@string/q1" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/answerOneTIL"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/questionOneTV"
+            app:layout_constraintStart_toStartOf="@+id/questionOneTV"
+            app:layout_constraintTop_toBottomOf="@+id/questionOneTV">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/answerOneTIET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/questionTwoTV"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerOneTIL"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/answerOneTIL"
+            app:layout_constraintTop_toBottomOf="@+id/answerOneTIL"
+            tools:text="@string/q2" />
+
+        <TextView
+            android:id="@+id/questionThreeTV"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerTwoRG"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/answerTwoRG"
+            app:layout_constraintTop_toBottomOf="@+id/answerTwoRG"
+            tools:text="@string/q3" />
+
+        <TextView
+            android:id="@+id/questionFourTV"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerThreeCB4"
+            app:layout_constraintStart_toStartOf="@+id/answerThreeCB4"
+            app:layout_constraintTop_toBottomOf="@+id/answerThreeCB4"
+            tools:text="@string/q4" />
+
+        <TextView
+            android:id="@+id/questionFiveTV"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerFourTIL"
+            app:layout_constraintStart_toStartOf="@+id/answerFourTIL"
+            app:layout_constraintTop_toBottomOf="@+id/answerFourTIL"
+            tools:text="@string/q5" />
+
+        <TextView
+            android:id="@+id/questionSixTV"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerFiveRG"
+            app:layout_constraintStart_toStartOf="@+id/answerFiveRG"
+            app:layout_constraintTop_toBottomOf="@+id/answerFiveRG"
+            tools:text="@string/q6" />
+
+        <RadioGroup
+            android:id="@+id/answerTwoRG"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/questionTwoTV"
+            app:layout_constraintStart_toStartOf="@+id/questionTwoTV"
+            app:layout_constraintTop_toBottomOf="@+id/questionTwoTV">
+
+            <RadioButton
+                android:id="@+id/answerTwoRB1"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/RB1" />
+
+            <RadioButton
+                android:id="@+id/answerTwoRB2"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:text="@string/RB2" />
+
+            <RadioButton
+                android:id="@+id/answerTwoRB3"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:text="@string/RB3" />
+
+            <RadioButton
+                android:id="@+id/answerTwoRB4"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:text="@string/RB4" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/answerThreeCB1"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/questionThreeTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/questionThreeTV"
+            app:layout_constraintTop_toBottomOf="@+id/questionThreeTV"
+            tools:text="@string/CB1" />
+
+        <CheckBox
+            android:id="@+id/answerThreeCB2"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerThreeCB1"
+            app:layout_constraintStart_toStartOf="@+id/answerThreeCB1"
+            app:layout_constraintTop_toBottomOf="@+id/answerThreeCB1"
+            tools:text="@string/CB2" />
+
+        <CheckBox
+            android:id="@+id/answerThreeCB3"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerThreeCB2"
+            app:layout_constraintStart_toStartOf="@+id/answerThreeCB2"
+            app:layout_constraintTop_toBottomOf="@+id/answerThreeCB2"
+            tools:text="@string/CB3" />
+
+        <CheckBox
+            android:id="@+id/answerThreeCB4"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerThreeCB3"
+            app:layout_constraintStart_toStartOf="@+id/answerThreeCB3"
+            app:layout_constraintTop_toBottomOf="@+id/answerThreeCB3"
+            tools:text="@string/CB4" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/answerFourTIL"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/questionFourTV"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/questionFourTV"
+            app:layout_constraintTop_toBottomOf="@+id/questionFourTV">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/answerFourTIET"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/answerFiveRG"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/questionFiveTV"
+            app:layout_constraintStart_toStartOf="@+id/questionFiveTV"
+            app:layout_constraintTop_toBottomOf="@+id/questionFiveTV">
+
+
+            <RadioButton
+                android:id="@+id/answerFiveRB1"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/RB1" />
+
+            <RadioButton
+                android:id="@+id/answerFiveRB2"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:text="@string/RB2" />
+
+            <RadioButton
+                android:id="@+id/answerFiveRB3"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:text="@string/RB3" />
+
+            <RadioButton
+                android:id="@+id/answerFiveRB4"
+                style="@style/MyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                tools:text="@string/RB4" />
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/answerSixCB1"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            app:layout_constraintEnd_toEndOf="@+id/questionSixTV"
+            app:layout_constraintStart_toStartOf="@+id/questionSixTV"
+            app:layout_constraintTop_toBottomOf="@+id/questionSixTV"
+            tools:text="@string/CB1" />
+
+        <CheckBox
+            android:id="@+id/answerSixCB2"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerSixCB1"
+            app:layout_constraintStart_toStartOf="@+id/answerSixCB1"
+            app:layout_constraintTop_toBottomOf="@+id/answerSixCB1"
+            tools:text="@string/CB2" />
+
+        <CheckBox
+            android:id="@+id/answerSixCB3"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerSixCB2"
+            app:layout_constraintStart_toStartOf="@+id/answerSixCB2"
+            app:layout_constraintTop_toBottomOf="@+id/answerSixCB2"
+            tools:text="@string/CB3" />
+
+        <CheckBox
+            android:id="@+id/answerSixCB4"
+            style="@style/MyTextStyle"
+            android:layout_width="@dimen/dimen_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            app:layout_constraintEnd_toEndOf="@+id/answerSixCB3"
+            app:layout_constraintStart_toStartOf="@+id/answerSixCB3"
+            app:layout_constraintTop_toBottomOf="@+id/answerSixCB3"
+            tools:text="@string/CB4" />
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/MyButtonStyle"
+            android:layout_width="@dimen/dimen_125dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:layout_marginBottom="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/answerSixCB4"
+            app:layout_constraintStart_toStartOf="@+id/answerSixCB4"
+            app:layout_constraintTop_toBottomOf="@+id/answerSixCB4" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
