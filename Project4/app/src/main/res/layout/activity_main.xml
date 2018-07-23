@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/albumsTV"
+        style="@style/MyTextViewStyle"
+        android:layout_width="match_parent"
+        android:background="@color/albumsColor"
+        android:drawableLeft="@drawable/album_icon"
+        android:drawableStart="@drawable/album_icon"
+        android:text="@string/albums" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/playlistsTV"
+        style="@style/MyTextViewStyle"
+        android:layout_width="match_parent"
+        android:background="@color/playlistsColor"
+        android:drawableLeft="@drawable/playlist_icon"
+        android:drawableStart="@drawable/playlist_icon"
+        android:text="@string/playlists" />
+
+    <TextView
+        android:id="@+id/artistsTV"
+        style="@style/MyTextViewStyle"
+        android:layout_width="match_parent"
+        android:background="@color/artistsColor"
+        android:drawableLeft="@drawable/artists_icon"
+        android:drawableStart="@drawable/artists_icon"
+        android:text="@string/artists" />
+
+    <TextView
+        android:id="@+id/genresTV"
+        style="@style/MyTextViewStyle"
+        android:layout_width="match_parent"
+        android:background="@color/genresColor"
+        android:drawableLeft="@drawable/genre_icon"
+        android:drawableStart="@drawable/genre_icon"
+        android:text="@string/genres" />
+</LinearLayout>

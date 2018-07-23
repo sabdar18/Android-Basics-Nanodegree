@@ -1,3 +1,51 @@
 <resources>
-    <string name="app_name">Project 4</string>
+    <string name="app_name">Music Player</string>
+
+    <string name="albums">Albums</string>
+    <string name="playlists">Playlists</string>
+    <string name="genres">Genres</string>
+    <string name="artists">Artists</string>
+    <string name="album_sub_title">Album Sub Title</string>
+    <string name="album_name">Album Name</string>
+    <string name="artist_name">Artist Name</string>
+
+    <string-array name="albumList">
+        <item>Shankara Bharanam</item>
+        <item>Devadasu</item>
+        <item>Bombay</item>
+        <item>Lava Kusa</item>
+        <item>Pandanti Kapuram</item>
+        <item>Preyasi Raave</item>
+        <item>Maro Charithra</item>
+        <item>Kaliyuga Ramudu</item>
+        <item>Driver Ramudu</item>
+        <item>Sri Valli Kalyanam</item>
+    </string-array>
+
+    <string-array name="genreList">
+        <item>Broken Heart</item>
+        <item>Romantic</item>
+        <item>Sentimental</item>
+        <item>Wedding</item>
+        <item>Work Out</item>
+        <item>Slow Romantic Hits</item>
+        <item>Tapori Mixes</item>
+        <item>Philosophical</item>
+        <item>Missing You</item>
+        <item>Sleep</item>
+    </string-array>
+
+
+    <string-array name="artistList">
+        <item>Kaalabhairava</item>
+        <item>Vijay Anthony</item>
+        <item>Anurag Kulkarni</item>
+        <item>Rajendra Prasad</item>
+        <item>Suriya</item>
+        <item>Soundarya</item>
+        <item>Daasarathi</item>
+        <item>Malavika</item>
+        <item>Nara Rohit</item>
+        <item>Richa Pallod</item>
+    </string-array>
 </resources>
