@@ -30,8 +30,8 @@
         style="@style/MyTextViewStyle"
         android:layout_width="match_parent"
         android:background="@color/artistsColor"
-        android:drawableLeft="@drawable/artists_icon"
-        android:drawableStart="@drawable/artists_icon"
+        android:drawableLeft="@drawable/artist_icon"
+        android:drawableStart="@drawable/artist_icon"
         android:text="@string/artists" />
 
     <TextView

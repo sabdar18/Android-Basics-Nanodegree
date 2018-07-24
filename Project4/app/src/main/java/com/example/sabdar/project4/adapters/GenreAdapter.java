@@ -1,6 +1,7 @@
 package com.example.sabdar.project4.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.Placeholder;
@@ -12,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.sabdar.project4.R;
+import com.example.sabdar.project4.activity.AlbumActivity;
+import com.example.sabdar.project4.activity.ArtistActivity;
 import com.example.sabdar.project4.pojo.Genre;
 
 import java.util.List;
@@ -42,6 +45,14 @@ public class GenreAdapter extends ArrayAdapter<Genre> {
         holder.genreName.setText(genre.getGenreName());
         holder.genreImage.setContentDescription(genre.getGenreName());
         holder.genreImage.setImageResource(genre.getGenreImage());
+        // to show Albums list
+        itemListView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), AlbumActivity.class);
+                getContext().startActivity(intent);
+            }
+        });
         return itemListView;
     }
 

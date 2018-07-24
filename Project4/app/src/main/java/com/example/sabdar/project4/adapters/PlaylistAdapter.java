@@ -1,6 +1,7 @@
 package com.example.sabdar.project4.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -11,6 +12,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.sabdar.project4.R;
+import com.example.sabdar.project4.activity.AlbumActivity;
+import com.example.sabdar.project4.activity.ArtistActivity;
+import com.example.sabdar.project4.activity.GenreActivity;
 import com.example.sabdar.project4.pojo.Playlist;
 
 import java.util.List;
@@ -45,6 +49,14 @@ public class PlaylistAdapter extends ArrayAdapter<Playlist> {
         holder.playlistImage.setContentDescription(playlist.getPlaylistName());
         holder.playlistImage.setImageResource(playlist.getPlaylistImage());
         holder.playlistArtistName.setText(playlist.getArtistName());
+        // to show Album list
+        itemListView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), AlbumActivity.class);
+                getContext().startActivity(intent);
+            }
+        });
         return itemListView;
     }
 

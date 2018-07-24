@@ -8,6 +8,8 @@
     <string name="album_sub_title">Album Sub Title</string>
     <string name="album_name">Album Name</string>
     <string name="artist_name">Artist Name</string>
+    <string name="menu">Menu</string>
+    <string name="home">Home</string>
 
     <string-array name="albumList">
         <item>Shankara Bharanam</item>
