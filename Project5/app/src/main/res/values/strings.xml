@@ -1,3 +1,161 @@
 <resources>
-    <string name="app_name">Project 5</string>
+    <string name="app_name">Tour Guide</string>
+
+
+    <string name="sub_heading">Sub Heading</string>
+    <string name="heading">Heading</string>
+    <string name="rating">(4.6)</string>
+    <string name="description">Location Description will come here</string>
+    <string name="address">Address</string>
+
+    <string-array name="tabs">
+        <item>Places</item>
+        <item>Restaurants</item>
+        <item>Hotels</item>
+        <item>Shopping</item>
+    </string-array>
+
+    <string-array name="places_title">
+        <item>Charminar</item>
+        <item>Golkonda</item>
+        <item>Ramoji Film City</item>
+        <item>Salar Jung Museum</item>
+        <item>Chilkoor Balaji Temple</item>
+    </string-array>
+    <string-array name="places_sub_title">
+        <item>Mosque in Hyderabad, India</item>
+        <item>Fortress in Hyderabad, India</item>
+        <item>Film company</item>
+        <item>Museum in Hyderabad, India</item>
+        <item>Hindu temple in India</item>
+    </string-array>
+    <string-array name="places_description">
+        <item>The Charminar, constructed in 1591, is a monument and mosque located in Hyderabad, Telangana, India. The landmark has become a global icon of Hyderabad, listed among the most recognized structures of India</item>
+        <item>Golkonda, also known as Golconda, Gol konda, or Golla konda, is a citadel and fort in Southern India and was the capital of the medieval sultanate of the Qutb Shahi dynasty, is situated 11 km west of Hyderabad</item>
+        <item>The Ramoji Film City in India is located in Hyderabad. Spread over 1666 acres, it is the largest integrated film city in Telangana and has been certified by the Guinness World Records as the largest studio complex in the world.</item>
+        <item>The Salar Jung Museum is an art museum located at Dar-ul-Shifa, on the southern bank of the Musi River in the city of Hyderabad, Telangana, India. It is one of the three National Museums of India.</item>
+        <item>Chilkur Balaji Temple, popularly known as "Visa Balaji Temple'', is an ancient Hindu temple of Lord Balaji on the banks of Osman Sagar in Hyderabad.</item>
+    </string-array>
+    <string-array name="places_address">
+        <item>Char Kaman, Ghansi Bazaar, Hyderabad, Telangana 500002</item>
+        <item>Khair Complex, Ibrahim Bagh, Hyderabad, Telangana 500008</item>
+        <item>Ramoji Film City Main Road, Anaspur Village, Hayathnagar Mandal, Hyderabad, Telangana 501512</item>
+        <item>Salar Jung Road, Near Minar Function Hall, Darulshifa, Hyderabad, Telangana 500002</item>
+        <item>Chilkur Balaji Temple Rd, Himayat Nagar, Hyderabad, Telangana 500075</item>
+    </string-array>
+    <string-array name="places_phone">
+        <item>040 6674 5986</item>
+        <item>040 2351 2401</item>
+        <item>1800 4250 9999</item>
+        <item>040 2457 6443</item>
+        <item>084172 35933</item>
+    </string-array>
+
+    <string-array name="hotels_title">
+        <item>Mercure </item>
+        <item>Zibe  </item>
+        <item>Treebo Grand Plaza</item>
+        <item>Manasarovar The Fern</item>
+        <item>Hyatt </item>
+    </string-array>
+    <string-array name="hotels_sub_title">
+        <item>4-star hotel</item>
+        <item>3-star hotel</item>
+        <item>3-star hotel</item>
+        <item>4-star hotel</item>
+        <item>5-star hotel</item>
+    </string-array>
+    <string-array name="hotels_description">
+        <item>Set in the Banjara Hills district, this informal, modern hotel is 10 minutes' walk from Khairatabad Railway Station, 3 km from the hilltop Birla Mandir temple and 9 km from the 16th-century Charminar mosque.</item>
+        <item>This modern hotel in an area with shops is a 5-minute walk from KPHB Colony metro station, 8 km from the Shilparamam cultural village and 12 km from the Kotla Vijayabhaskara Reddy Botanical Garden.</item>
+        <item>This unassuming hotel, in a modern glass-fronted building, is a 12-minute walk from the Nampally Railway Station, 2.9 km from Snow World amusement park and 4.7 km from the ornate Makkah Masjid mosque</item>
+        <item>A 15-minute walk from Sanjeevaiah Park railway station, this modern, upmarket hotel is also 3.7 km from Hussain Sagar lake and 11 km from the iconic 16th-century Charminar mosque. </item>
+        <item>This upscale, modern hotel in the Nanakramguda suburb is 5 km from the University of Hyderabad and 18 km from Hyderabad city centre.</item>
+    </string-array>
+    <string-array name="hotels_address">
+        <item>6/3/0551, Banjara Hills Main Rd, Irram Manzil Colony, Somajiguda, Hyderabad, Telangana 500082</item>
+        <item>2-22-300, Rd Number 3, Bhagya Nagar Colony, Kukatpally, Hyderabad, Telangana 500072</item>
+        <item>No 5-9-88/A/1, Beside Haj House, Opposite Public Gardens, Nampally, Hyderabad, Telangana 500001</item>
+        <item>Chiraan Fort Club, U.S. Consulate Lane, Begumpet, Secunderabad, Hyderabad, Telangana 500003</item>
+        <item>Road No.2, Plot No.7, I.T. Park, Gachibowli, Hyderabad, Telangana 500019</item>
+    </string-array>
+    <string-array name="hotels_phone">
+        <item>040 6788 8888</item>
+        <item>040 4363 9999</item>
+        <item>093228 00100</item>
+        <item>040 3083 9999</item>
+        <item>040 4848 1234</item>
+    </string-array>
+
+    <string-array name="restaurants_title">
+        <item>Ohri's Gufaa</item>
+        <item>Bawarchi</item>
+        <item>Sahib’s Barbeque</item>
+        <item>Humming Bird Cafe</item>
+        <item>Farzi Cafe</item>
+    </string-array>
+    <string-array name="restaurants_sub_title">
+        <item>Basheer Bagh</item>
+        <item>Nallakunta</item>
+        <item>Hitech City</item>
+        <item>Jubilee Hills</item>
+        <item>Jubilee Hills</item>
+    </string-array>
+    <string-array name="restaurants_description">
+        <item>Mocktails, Hyderabadi Biryani, Chicken Kebab, Paneer Tikka, Gulab Jamun, Pathar Ka Ghost, Dal Bukhara</item>
+        <item>Biryani, Hyderabadi, North Indian, Seafood</item>
+        <item>Mutton Seekh Kabab, Mutton Curry, Haleem, Firni, Dum Ka Chicken, Hyderabadi Biryani, Chicken Shawarama</item>
+        <item>Pizza, Hibiscus Tea, Sandwiches, Pasta, Brownie, Coffee Shake, Onion Rings</item>
+        <item>Cocktails, Mocktails, Keema Kulcha, Bombay Bhel, Maggi, Chicken Guntur, Biryani</item>
+    </string-array>
+    <string-array name="restaurants_address">
+        <item>5-9-30/16-20, Ohri's Cuisine Court, Opposite Old Gandhi Medical College, Basheer Bagh, Hyderabad</item>
+        <item>Beside Astoria Hotel, RTC Cross Road, Chikkadpally, Nallakunta, Hyderabad</item>
+        <item>Ohris Cyber Grub, Plot 4/1 &amp; 4/2, 64, Huda Techno Enclave, Mind Space Centre, Madhapur</item>
+        <item>1-98/2/29, Plot 19, Kavuri Hills Layout, Madhapur, Hyderabad</item>
+        <item>1200, Road 59, Jubilee Hills, Hyderabad</item>
+    </string-array>
+    <string-array name="restaurants_phone">
+        <item>040 23298811</item>
+        <item>7306024024</item>
+        <item>9014200400</item>
+        <item>040 30676325</item>
+        <item>00 4023108888</item>
+    </string-array>
+    <string-array name="shopping_title">
+        <item>GVK One</item>
+        <item>The Chennai Shopping Mall</item>
+        <item>Anahita</item>
+        <item>Babukhan Mall</item>
+        <item>Seasons Shopping Mall</item>
+    </string-array>
+    <string-array name="shopping_sub_title">
+        <item>Shopping mall</item>
+        <item>Shopping mall</item>
+        <item>Women's clothing store</item>
+        <item>Mall</item>
+        <item>Shopping Mall</item>
+    </string-array>
+    <string-array name="shopping_description">
+        <item>GVK One is a shopping mall located in Banjara Hills, Hyderabad, India. The 350,000 sq ft mall was opened to public on 1 May 2009. The mall has 70 branded stores and its anchor store Shoppers Stop spans 60,000 sq ft in three levels.</item>
+        <item>The Chennai Shopping Mall in Hyderabad, India</item>
+        <item>Women's clothing store in Hyderabad, India</item>
+        <item>Mall in Hyderabad, India</item>
+        <item>Shopping mall in Hyderabad, India</item>
+    </string-array>
+    <string-array name="shopping_address">
+        <item>Rd Number 1, Balapur Basthi, Banjara Hills, Hyderabad, Telangana 500034</item>
+        <item>Plot no 5 and 14, Bhagyanagar Colony, Kukatpally, Beside Swagat Restaurant, Hyderabad, Telangana 500085</item>
+        <item>H.No. 8-2-418, Ground Floor, Krishnama House, Road No. 7, Near Meridian School, Next to Ratandeep, Banjara Hills, Hyderabad, Telangana 500034</item>
+        <item>Shop-2, Somajiguda, Hyderabad, 500082</item>
+        <item>Tollichowki Chowrastha, Prof CR Rd, Toli Chowki, Hyderabad, Telangana 500008</item>
+    </string-array>
+    <string-array name="shopping_phone">
+        <item>040 4276 7600</item>
+        <item>040 2315 2727</item>
+        <item>099632 84563</item>
+        <item>040 2340 7886</item>
+        <item>040 2356 3469</item>
+    </string-array>
+
 </resources>
