@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyTextStyle">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MyTextStyle.Normal">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="MyTextStyle.SubHeading">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="MyTextStyle.Heading">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+    </style>
+
 </resources>

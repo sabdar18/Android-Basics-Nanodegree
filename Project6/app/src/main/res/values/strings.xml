@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">Project 6</string>
+    <string name="app_name">News Feed</string>
+    <string name="no_news_text">No News</string>
+    <string name="place_news_title">News Title</string>
+    <string name="place_news_section">News Section Name</string>
+    <string name="place_author_name">Sabdar Shaik</string>
+    <string name="place_news_date">28-08-2018 08:30 PM</string>
+    <string name="no_network_text">No Internet Connection</string>
 </resources>

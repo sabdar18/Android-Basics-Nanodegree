@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_marginStart="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                style="@style/MyTextStyle.Heading"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                android:layout_marginStart="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/place_news_title" />
+
+            <TextView
+                android:id="@+id/sectionTextView"
+                style="@style/MyTextStyle.SubHeading"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                app:layout_constraintEnd_toEndOf="@+id/titleTextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/titleTextView"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                tools:text="@string/place_news_section" />
+
+            <TextView
+                android:id="@+id/authorTextView"
+                style="@style/MyTextStyle.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:layout_marginRight="@dimen/dimen_8dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/dateTextView"
+                app:layout_constraintEnd_toStartOf="@+id/dateTextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/sectionTextView"
+                tools:text="@string/place_author_name" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                style="@style/MyTextStyle.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_8dp"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/sectionTextView"
+                app:layout_constraintTop_toBottomOf="@+id/sectionTextView"
+                tools:text="@string/place_news_date" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

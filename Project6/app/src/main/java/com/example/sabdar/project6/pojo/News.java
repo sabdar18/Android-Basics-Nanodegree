@@ -7,12 +7,12 @@ public class News {
     private String mPublishDate;
     private String mWebUrl;
 
-    public News(String title, String section, String author, String publishDate, String webUrl) {
+    public News(String title, String section, String webUrl, String publishDate, String author) {
         this.mTitle = title;
         this.mSection = section;
-        this.mAuthor = author;
-        this.mPublishDate = publishDate;
         this.mWebUrl = webUrl;
+        this.mPublishDate = publishDate;
+        this.mAuthor = author;
     }
 
     public String getTitle() {
