@@ -27,7 +27,7 @@ import static android.support.v7.widget.RecyclerView.*;
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<News>> {
 
     private static final String API_KEY = BuildConfig.GuardianAPIKey;
-    private static final String NEWS_FEED_URL = "https://content.guardianapis.com/search?q=debates&api-key=" + API_KEY;
+    private static final String NEWS_FEED_URL = "https://content.guardianapis.com/search?q=debates&show-tags=contributor&api-key=" + API_KEY;
     private static final int NEWS_LOADER_ID = 1;
 
 

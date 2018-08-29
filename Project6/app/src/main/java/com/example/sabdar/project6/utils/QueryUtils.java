@@ -126,10 +126,22 @@ public final class QueryUtils {
 
                 String title = result.getString("webTitle");
                 String section = result.getString("sectionName");
-                String author = result.optString("author");
                 String date = result.optString("webPublicationDate");
                 String url = result.getString("webUrl");
 
+                JSONArray tags = result.getJSONArray("tags");
+                StringBuilder authors = new StringBuilder();
+                for (int j = 0; j < tags.length(); j++) {
+                    JSONObject tag = tags.getJSONObject(j);
+                    String author = tag.getString("webTitle");
+                    authors.append(author);
+                    authors.append(", ");
+                }
+                String author ="";
+                if(authors.length() >3) {
+                    int lastIndex = authors.length() - 3;
+                    author = authors.substring(0, lastIndex);
+                }
                 News news = new News(title, section, url, date, author);
                 newsList.add(news);
             }
