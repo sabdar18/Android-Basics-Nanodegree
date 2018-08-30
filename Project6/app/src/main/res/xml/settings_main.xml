@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/settings_title">
+
+    <EditTextPreference
+        android:defaultValue="@string/settings_news_items_limit_default_value"
+        android:inputType="number"
+        android:key="@string/settings_news_items_limit_key"
+        android:selectAllOnFocus="true"
+        android:title="@string/settings_news_items_limit_label" />
+    <ListPreference
+        android:defaultValue="@string/settings_topic_default_value"
+        android:entries="@array/settings_topic_entries"
+        android:entryValues="@array/settings_topic_values"
+        android:key="@string/settings_topic_key"
+        android:title="@string/settings_topic_label" />
+    <ListPreference
+        android:defaultValue="@string/settings_order_by_default_value"
+        android:entries="@array/settings_order_by_entries"
+        android:entryValues="@array/settings_order_by_values"
+        android:key="@string/settings_order_by_key"
+        android:title="@string/settings_order_by_label" />
+    <ListPreference
+        android:defaultValue="@string/settings_news_type_default_value"
+        android:entries="@array/settings_news_type_entries"
+        android:entryValues="@array/settings_news_type_values"
+        android:key="@string/settings_news_type_key"
+        android:title="@string/settings_news_type_label" />
+</PreferenceScreen>

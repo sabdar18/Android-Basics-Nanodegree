@@ -11,8 +11,8 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
-        buildTypes.each{
-            it.buildConfigField('String','GuardianAPIKey',GuardianAPIKey)
+        buildTypes.each {
+            it.buildConfigField('String', 'GuardianAPIKey', GuardianAPIKey)
         }
         release {
             minifyEnabled false
