@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Project 7</string>
+    <string name="insert_dummy_data">Insert Dummy Data</string>
+    <string name="product_insert">Product added to database with Id : %d</string>
+    <string name="product">Product %d</string>
+    <string name="phone_number">9988779988</string>
+    <string name="supplier">Supplier %d</string>
+    <string name="total_rows_text">Total Number of Rows in Inventory Database is  %d</string>
+    <string name="new_line_text">\n</string>
+    <string name="row_heading">Id | Product Name | Price | Quantity | Supplier Name | Supplier Phone Number</string>
+    <string name="bar_separate"> &#160;|&#160; </string>
 </resources>
