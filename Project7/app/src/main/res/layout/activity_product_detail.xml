@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProductDetailActivity">
+
+    <TextView
+        android:id="@+id/detailsProductLabel"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/product_name_text"
+        app:layout_constraintEnd_toStartOf="@+id/verticalSeparator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/verticalSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/detailsProductName"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsProductLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/verticalSeparator"
+        tools:text="@string/product_name_text" />
+
+    <TextView
+        android:id="@+id/detailsPriceLabel"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/price_text"
+        app:layout_constraintEnd_toEndOf="@+id/detailsProductLabel"
+        app:layout_constraintStart_toStartOf="@+id/detailsProductLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsProductLabel" />
+
+    <TextView
+        android:id="@+id/detailsPrice"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsPriceLabel"
+        app:layout_constraintEnd_toEndOf="@+id/detailsProductName"
+        app:layout_constraintStart_toStartOf="@+id/detailsProductName"
+        tools:text="0.0" />
+
+    <TextView
+        android:id="@+id/detailsQuantityLabel"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/quantity_text"
+        app:layout_constraintEnd_toEndOf="@+id/detailsPriceLabel"
+        app:layout_constraintStart_toStartOf="@+id/detailsPriceLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsPriceLabel" />
+
+    <TextView
+        android:id="@+id/detailsQuantity"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsQuantityLabel"
+        app:layout_constraintEnd_toEndOf="@+id/detailsPrice"
+        app:layout_constraintStart_toStartOf="@+id/detailsPrice"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/detailsSupplierLabel"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/supplier_name_text"
+        app:layout_constraintEnd_toEndOf="@+id/detailsQuantityLabel"
+        app:layout_constraintStart_toStartOf="@+id/detailsQuantityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsQuantityLabel" />
+
+    <TextView
+        android:id="@+id/detailsSupplierName"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsSupplierLabel"
+        app:layout_constraintEnd_toEndOf="@+id/detailsQuantity"
+        app:layout_constraintStart_toStartOf="@+id/detailsQuantity"
+        tools:text="@string/supplier_name_text" />
+
+    <TextView
+        android:id="@+id/detailsSupplierPhoneNumberLabel"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/supplier_phone_number_text"
+        app:layout_constraintEnd_toEndOf="@+id/detailsSupplierLabel"
+        app:layout_constraintStart_toStartOf="@+id/detailsSupplierLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsSupplierLabel" />
+
+    <TextView
+        android:id="@+id/detailsSupplierPhoneNumber"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsSupplierPhoneNumberLabel"
+        app:layout_constraintEnd_toEndOf="@+id/detailsSupplierName"
+        app:layout_constraintStart_toStartOf="@+id/detailsSupplierName"
+        tools:text="@string/supplier_phone_number_text" />
+
+    <Button
+        android:id="@+id/detailsOrderButton"
+        style="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_16dp"
+        android:layout_marginRight="@dimen/dimen_16dp"
+        android:text="@string/order"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsDeleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/detailsDeleteButton" />
+
+    <Button
+        android:id="@+id/detailsDeleteButton"
+        style="@style/MyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16dp"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_32dp"
+        android:text="@string/delete"
+        app:layout_constraintEnd_toStartOf="@+id/detailsOrderButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailsUpdateQuantityLabel" />
+
+    <TextView
+        android:id="@+id/detailsQuantityRateLabel"
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/quantity_rate"
+        app:layout_constraintEnd_toEndOf="@+id/detailsSupplierPhoneNumberLabel"
+        app:layout_constraintStart_toStartOf="@+id/detailsSupplierPhoneNumberLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsSupplierPhoneNumberLabel" />
+
+    <EditText
+        android:id="@+id/detailsQuantityRate"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity_rate"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsQuantityRateLabel"
+        app:layout_constraintEnd_toEndOf="@+id/detailsSupplierPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/detailsSupplierPhoneNumber" />
+
+    <TextView
+        android:id="@+id/detailsUpdateQuantityLabel"
+
+        style="@style/MyTextView"
+        android:layout_width="@dimen/dimen_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_16dp"
+        android:text="@string/update_quantity"
+        app:layout_constraintEnd_toEndOf="@+id/detailsQuantityRateLabel"
+        app:layout_constraintStart_toStartOf="@+id/detailsQuantityRateLabel"
+        app:layout_constraintTop_toBottomOf="@+id/detailsQuantityRateLabel" />
+
+    <Button
+        android:id="@+id/detailsDecreaseQuantity"
+        style="@style/MyButton"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:text="-"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsUpdateQuantityLabel"
+        app:layout_constraintEnd_toStartOf="@+id/detailsIncreaseQuantity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/verticalSeparator"
+        app:layout_constraintStart_toStartOf="@+id/detailsQuantityRate" />
+
+    <Button
+        android:id="@+id/detailsIncreaseQuantity"
+        style="@style/MyButton"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_marginEnd="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:text="+"
+        app:layout_constraintBaseline_toBaselineOf="@+id/detailsDecreaseQuantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/detailsDecreaseQuantity" />
+</android.support.constraint.ConstraintLayout>
