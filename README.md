@@ -7,3 +7,5 @@
 3. [Project 3 (Quiz Application)](./Project3)
 4. [Project 4 (Music Application)](./Project4)
 5. [Project 5 (Tour Guide Application)](./Project5)
+6. [Project 6 (News Application)](./Project6)
+7. [Project 7 (Inventory Application)](./Project7)
